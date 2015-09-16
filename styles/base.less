@@ -1,0 +1,205 @@
+@import "syntax-variables";
+
+atom-text-editor, :host {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
+}
+
+atom-text-editor .gutter, :host .gutter {
+  background-color: @syntax-gutter-background-color;
+  color: @syntax-gutter-text-color;
+}
+
+atom-text-editor .gutter .line-number.cursor-line, :host .gutter .line-number.cursor-line {
+  background-color: @syntax-gutter-background-color-selected;
+  color: @syntax-gutter-text-color-selected;
+}
+
+atom-text-editor .gutter .line-number.cursor-line-no-selection, :host .gutter .line-number.cursor-line-no-selection {
+  color: @syntax-gutter-text-color-selected;
+}
+
+atom-text-editor .wrap-guide, :host .wrap-guide {
+  color: @syntax-wrap-guide-color;
+}
+
+atom-text-editor .indent-guide, :host .indent-guide {
+  color: @syntax-indent-guide-color;
+}
+
+atom-text-editor .invisible-character, :host .invisible-character {
+  color: @syntax-invisible-character-color;
+}
+
+atom-text-editor .search-results .marker .region, :host .search-results .marker .region {
+  background-color: transparent;
+  border: @syntax-result-marker-color;
+}
+
+atom-text-editor .search-results .marker.current-result .region, :host .search-results .marker.current-result .region {
+  border: @syntax-result-marker-color-selected;
+}
+
+atom-text-editor.is-focused .cursor, :host(.is-focused) .cursor {
+  border-color: @syntax-cursor-color;
+}
+
+atom-text-editor.is-focused .selection .region, :host(.is-focused) .selection .region {
+  background-color: @syntax-selection-color;
+}
+
+atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-editor.is-focused .line.cursor-line, :host(.is-focused) .line-number.cursor-line-no-selection, :host(.is-focused) .line.cursor-line {
+  background-color: rgba(0, 0, 0, 0.07);
+}
+
+.comment {
+  font-style: italic;
+  color: rgba(87, 98, 106, 1);
+}
+
+.keyword, .storage {
+  color: #399aff;
+}
+
+.constant.numeric {
+  color: #95bcff;
+}
+
+.constant {
+  color: #C5060B;
+}
+
+.constant.language {
+  color: #9888fb;
+}
+
+.variable.language, .variable.other {
+  color: #43bbd4;
+}
+
+.string {
+  color: #059c0b;
+}
+
+.constant.character.escape, .string .source {
+  color: #26B31A;
+}
+
+.meta.preprocessor {
+  color: #1A921C;
+}
+
+.keyword.control.import {
+  color: #29e32c;
+}
+
+.entity.name.command, .entity.name.function, .entity.name.end.function, .support.function.any-method {
+  color: #93deff;
+}
+
+.entity.name.type {
+  text-decoration: underline;
+  color: #FFFFFF;
+  background-color: #000000;
+}
+
+.entity.other.inherited-class {
+  font-style: italic;
+  color: #FFFFFF;
+}
+
+.variable.parameter {
+  font-style: italic;
+  color: #FFFFFF;
+}
+
+.storage.type.method {
+  color: #70727E;
+}
+
+.meta.section .entity.name.section, .declaration.section .entity.name.section {
+  font-style: italic;
+}
+
+.support.function, .storage.type.fctn {
+  color: #5b75b0;
+}
+
+.support.command, .storage.type.comnd {
+  color: #d49308;
+}
+
+.support.class, .support.type {
+  color: #6D79DE;
+}
+
+.support.constant {
+  color: #06960E;
+}
+
+.support.variable {
+  color: #455d9c;
+}
+
+.keyword.operator.js {
+  color: #687687;
+}
+
+.invalid {
+  color: #FFFFFF;
+  background-color: #990000;
+}
+
+.invalid.deprecated.trailing-whitespace {
+  background-color: #FFD0D0;
+}
+
+.text .source, .string.unquoted {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.text .source .string.unquoted, .text .source .text .source {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.meta.tag.preprocessor.xml {
+  color: #68685B;
+}
+
+.meta.tag.sgml.doctype, .meta.tag.sgml.doctype .entity, .meta.tag.sgml.doctype .string, .meta.tag.preprocessor.xml, .meta.tag.preprocessor.xml .entity, .meta.tag.preprocessor.xml .string {
+  color: #888888;
+}
+
+.string.quoted.docinfo.doctype.DTD {
+  font-style: italic;
+}
+
+.meta.tag, .declaration.tag {
+  color: #1C02FF;
+}
+
+.entity.name.tag {
+  font-weight: bold;
+}
+
+.entity.other.attribute-name {
+  font-style: italic;
+}
+
+.markup.heading {
+  font-weight: bold;
+  color: #0C07FF;
+}
+
+.markup.quote {
+  font-style: italic;
+  color: #FFFFFF;
+}
+
+.markup.list {
+  color: #B90690;
+}
+
+.entity.name.test {
+  color: #EF761F;
+}

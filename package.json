@@ -1,0 +1,18 @@
+{
+  "name": "revigniter-dark-syntax",
+  "theme": "syntax",
+  "version": "0.1.0",
+  "description": "An Atom dark theme for proper syntax highlighting of LiveCode server and revIgniter source code.",
+  "keywords": [
+    "syntax",
+    "theme",
+    "dark",
+    "livecode",
+    "revigniter"
+  ],
+  "repository": "https://github.com/bhall2001/revigniter-dark-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": "*"
+  }
+}
