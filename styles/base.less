@@ -58,49 +58,49 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
 }
 
 .keyword, .storage {
-  color: #399aff;
+  color: @med-blue;
 }
 
 .constant.numeric {
-  color: #95bcff;
+  color: @light-blue;
 }
 
 .constant {
-  color: #C5060B;
+  color: @red;
 }
 
 .constant.language {
-  color: #9888fb;
+  color: @light-purple;
 }
 
 .variable.language, .variable.other {
-  color: #43bbd4;
+  color: @teal;
 }
 
 .string {
-  color: #059c0b;
+  color: @green;
 }
 
 .constant.character.escape, .string .source {
-  color: #26B31A;
+  color: @light-green;
 }
 
 .meta.preprocessor {
-  color: #1A921C;
+  color: @light-green;
 }
 
 .keyword.control.import {
-  color: #29e32c;
+  color: @lime-green;
 }
 
 .entity.name.command, .entity.name.function, .entity.name.end.function, .support.function.any-method {
-  color: #93deff;
+  color: @med-blue;
 }
 
 .entity.name.type {
   text-decoration: underline;
-  color: #FFFFFF;
-  background-color: #000000;
+  color: @white;
+  //background-color: #000000;
 }
 
 .entity.other.inherited-class {
@@ -122,23 +122,23 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
 }
 
 .support.function, .storage.type.fctn {
-  color: #5b75b0;
+  color: @blue2;
 }
 
 .support.command, .storage.type.comnd {
-  color: #d49308;
+  color: @orange;
 }
 
 .support.class, .support.type {
-  color: #6D79DE;
+  color: @med-blue;
 }
 
 .support.constant {
-  color: #06960E;
+  color: @green;
 }
 
 .support.variable {
-  color: #455d9c;
+  color: #blue2;
 }
 
 .keyword.operator.js {
@@ -146,7 +146,7 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
 }
 
 .invalid {
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #990000;
 }
 
@@ -175,11 +175,7 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
 }
 
 .meta.tag, .declaration.tag {
-  color: #347fff;
-}
-
-.entity.name.tag {
-  //font-weight: bold;
+  color: @med-blue;
 }
 
 .entity.other.attribute-name {
@@ -187,7 +183,6 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
 }
 
 .markup.heading {
-  //font-weight: bold;
   color: #4945ff;
 }
 
@@ -200,6 +195,30 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
   color: #B90690;
 }
 
-.entity.name.test {
-  color: #EF761F;
+//
+// Added better hilites for HTML
+// Added: 9/29/2015 RDH
+//
+.text-html-basic {
+  color: @white;
+}
+
+.keyword.operator.dereference.java {
+  color: @green;
+}
+
+.markup.inserted.diff, .meta.diff.header.to-file {
+  color: @green;
+}
+
+.storage {
+  color: @light-blue;
+}
+
+.entity.name.tag {
+  color: @orange;
+}
+
+.entity.other.attribute-name {
+  color: @light-purple;
 }
